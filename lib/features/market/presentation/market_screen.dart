@@ -57,11 +57,12 @@ class MarketScreen extends ConsumerWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-            loading: () => Center(
+            loading: () => const SliverFillRemaining(
+                    child: Center(
                   child: CircularProgressIndicator(
                     color: AppColors.primaryGold,
                   ),
-                ))
+                )))
       ]),
     );
   }
