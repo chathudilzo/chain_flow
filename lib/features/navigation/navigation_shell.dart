@@ -1,6 +1,7 @@
 import 'package:chain_flow/app_colors.dart';
 import 'package:chain_flow/features/market/presentation/market_screen.dart';
 import 'package:chain_flow/features/navigation/navigation_provider.dart';
+import 'package:chain_flow/features/trade/presentation/trade_screen.dart';
 import 'package:chain_flow/features/wallet/presentation/wallet_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,9 +18,7 @@ class NavigationShell extends ConsumerWidget {
         child: Text("Home"),
       ),
       MarketScreen(),
-      Center(
-        child: Text("Trade"),
-      ),
+      TradeScreen(),
       Center(
         child: Text("Future"),
       ),
