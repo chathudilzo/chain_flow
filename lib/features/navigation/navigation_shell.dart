@@ -1,4 +1,6 @@
 import 'package:chain_flow/app_colors.dart';
+import 'package:chain_flow/features/Futures/presentation/futures_screen.dart';
+import 'package:chain_flow/features/home/presentation/home_screen.dart';
 import 'package:chain_flow/features/market/presentation/market_screen.dart';
 import 'package:chain_flow/features/navigation/navigation_provider.dart';
 import 'package:chain_flow/features/trade/presentation/trade_screen.dart';
@@ -14,14 +16,10 @@ class NavigationShell extends ConsumerWidget {
     final selectedIndex = ref.watch(navigationProvider);
 
     final List<Widget> screens = [
-      Center(
-        child: Text("Home"),
-      ),
+      HomeScreen(),
       MarketScreen(),
       TradeScreen(),
-      Center(
-        child: Text("Future"),
-      ),
+      FuturesScreen(symbol: "BTC/USDT"),
       WalletScreen()
     ];
     return Scaffold(

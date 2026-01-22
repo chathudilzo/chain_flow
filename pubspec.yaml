@@ -39,6 +39,7 @@ dependencies:
   web_socket_channel: ^3.0.3
   interactive_chart: ^0.3.6
   http: ^1.6.0
+  chart_sparkline:
 
 dev_dependencies:
   flutter_test:
